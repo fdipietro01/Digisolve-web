@@ -43,20 +43,24 @@ html{
 }
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     text-decoration: none;
     padding: 10px 30px;
     border-radius: 200px;
+    display: inline-block;
 }
 
 .btn-full:link,
-.btn:visited{
+.btn-full:visited,
+input[type=submit]{
     background-color: #ed07b7;
     color:#fff;
 }
 
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit]:hover{
     background-color: #BD0592;
 }
 
@@ -278,3 +282,259 @@ header{
     height: auto;
 }
 
+/*** TESTIMONIALS SECTION ***/
+.testimonials-section{
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.8)), url("./Assets/img/testimonial-background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+.testimonials-heading{
+    font-size: 250%;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.testimonials-box{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+blockquote{
+ padding: 2%;
+ font-style: italic; 
+ line-height: 145%;   
+ position: relative;
+ margin-top: 40px;
+}
+
+blockquote:before { 
+    content:"\201C";
+    display: block;
+    font-size: 500%;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+cite {
+    margin-top: 25px;
+    font-size: 90%;
+}
+
+cite img {
+border-radius: 50%;
+height: 20%;
+vertical-align: middle;
+margin-right: 10px;
+}
+
+/*** PACKAGES SECTION ***/
+
+.packages-section{
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.packages-heading{
+    color: #000;
+    font-size: 250%;
+    margin-bottom: 20px;
+    margin-top: 150px;
+}
+
+.packages-box{
+    background-color: #fff;
+    width: 90%;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 3px #e6e6e6ef;
+    text-align: left;
+}
+
+.package-heading{
+    font-size: 150%;
+    color: #555;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.package-price{
+    color: #ed07b7;
+    font-size: 300%;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.package-price span {
+    font-size: 30%;
+    font-weight: 500;
+}
+
+.package-para{
+    color: #555;
+    font-size: 80%;
+    margin-bottom: 10px;
+}
+
+.packages-box ul {
+    list-style: none;
+}
+
+.small-icon{
+    color: #ed07b7;
+    font-size: 120%;
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+}
+
+.packages-box ul li {
+    color: #555;
+    padding: 5px 0;
+}
+
+.packages-box div{
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+}
+
+.packages-box div:last-child{
+    border: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.packages-box div:first-child{
+    background-color: #fcfcfc;
+}
+
+/*** CONTACT-FORM SECTION ***/
+
+.contact-section{
+    text-align: center;
+}
+
+.contact-heading{
+    color: #000;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.contact-form{
+    text-align: left;
+    width: 60%;
+    margin: 0 auto;
+    color: #555;
+}
+
+label{
+    text-align: left;
+}
+
+input[type=text],
+input[type=email],
+textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+input[type=submit]{
+    border:0;
+}
+
+textarea{
+    height: 100px;
+}
+
+.newsletter{
+    margin: 0 5px 10px; 
+}
+*:focus{
+    outline: none;
+}
+
+/*** FOOTER ***/
+
+footer{
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    color:#888;
+}
+
+.footer-nav{
+    float: left;
+}
+
+.social-links{
+    float: right;
+}
+
+.footer-nav li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    color:#888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #fff;
+}
+
+
+
+.social-links li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+.fa-facebook:hover{
+    color:#3b5998;
+}
+
+.fa-twitter:hover{
+    color:#1da1f2;
+}
+
+.fa-google-plus-g:hover{
+    color:#ea4335;
+}
+
+.fa-instagram:hover{
+    color:#c32aa3;
+}
+
+.fa-facebook,
+.fa-google-plus-g,
+.fa-twitter,
+.fa-instagram{
+    transition: color .5s;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 50px;
+    line-height: 1.5;
+}
